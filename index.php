@@ -18,21 +18,15 @@
 <body>
 
     <!-- <HEADER> -->
-    <header>
-        <?php include 'tpl_header.php'; ?>    
-    </header>
+    <?php include 'tpl_header.php'; ?>    
     <!-- </HEADER> -->
 
     <!-- <CONTENT> -->
-    <main>
-        <?php include 'contents/'.$seccion; ?>
-    </main>
+    <?php include 'contents/'.$seccion; ?>
     <!-- </CONTENT> -->
 
     <!-- <FOOTER> -->
-    <footer>
-        <?php include 'tpl_footer.php'; ?>
-    </footer>
+    <?php include 'tpl_footer.php'; ?>
     <!-- </FOOTER> -->
 
     <!-- <JS> -->

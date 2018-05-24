@@ -8,10 +8,56 @@
     box-sizing: border-box;
 }
 
+body
+{
+    background:@bg;
+}
+
 .container
 {
     position:relative;
+    width:100%;
     padding:20px;
+}
+
+/*
+
+    CUSTOM ICONS
+
+*/
+.custom-icons
+{
+    &.mobile-menu
+    {
+        width:30px;
+        height:6px;
+        background:@secondary;
+        display:block;
+
+        &::before, &::after
+        {
+            content:"";
+            position:absolute;
+            height:6px;
+            width:100%;
+            background:@secondary;
+        }
+
+        &::before
+        {
+            bottom:12px;
+        }
+
+        &::after
+        {
+            top:12px;
+        }
+
+        &.active
+        {
+            background:transparent;
+        }
+    }
 }
 
 /*
@@ -23,8 +69,28 @@ header
 {
     position:fixed;
     top:0;
-    height:80px;
     width:100%;
+    background:@bg_header;
+
+    #mobile-menu
+    {
+        position:absolute;
+        top:50%;
+        transform:translateY(-50%);
+        color:@secondary;
+    }
+
+    .logo
+    {
+        display:flex;
+        align-items:center;
+        justify-content:center;
+
+        img
+        {
+            max-height:~"calc(15vh - 40px)";
+        }
+    }
 }
 
 /*

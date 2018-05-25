@@ -11,6 +11,7 @@
 body
 {
     background:@bg;
+    font-size:16px;
 }
 
 .container
@@ -20,44 +21,9 @@ body
     padding:20px;
 }
 
-/*
-
-    CUSTOM ICONS
-
-*/
-.custom-icons
+.hidden
 {
-    &.mobile-menu
-    {
-        width:30px;
-        height:6px;
-        background:@secondary;
-        display:block;
-
-        &::before, &::after
-        {
-            content:"";
-            position:absolute;
-            height:6px;
-            width:100%;
-            background:@secondary;
-        }
-
-        &::before
-        {
-            bottom:12px;
-        }
-
-        &::after
-        {
-            top:12px;
-        }
-
-        &.active
-        {
-            background:transparent;
-        }
-    }
+    display:none;
 }
 
 /*
@@ -70,26 +36,48 @@ header
     position:fixed;
     top:0;
     width:100%;
-    background:@bg_header;
-
-    #mobile-menu
+    
+    #main_header
     {
-        position:absolute;
-        top:50%;
-        transform:translateY(-50%);
-        color:@secondary;
+        background:@bg_header;
+        height:5rem;
+
+        #mobile_menu
+        {
+            .mobile_menu_icon
+            {
+                padding:10px;
+                height:40px;
+                width:40px;
+                position:absolute;
+                top:20px;
+                left:20px;
+                font-size:20px;
+                display:flex;
+                justify-content: center;
+                align-items:center;
+                color:@secondary;
+            }
+        }
+
+        .logo
+        {
+            text-align:center;
+            position:absolute;
+            top:20px;
+            left:50%;
+            transform:translate(-50%);
+
+            img
+            {
+                height:36px;
+            }
+        }
     }
 
-    .logo
+    #sub_header
     {
-        display:flex;
-        align-items:center;
-        justify-content:center;
-
-        img
-        {
-            max-height:~"calc(15vh - 40px)";
-        }
+        display:none;
     }
 }
 
@@ -100,7 +88,7 @@ header
 */
 main
 {
-    margin-top:80px;
+    margin-top:5rem;
 }
 
 /*

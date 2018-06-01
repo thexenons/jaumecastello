@@ -1,12 +1,5 @@
 $(function(){
-    $('header .mobile-menu').on('click',function(){
-        if ($('header #mobile-menu').hasClass('active'))
-        {
-            $('header #mobile-menu').removeClass('active')
-        }
-        else
-        {
-            $('header #mobile-menu').addClass('active')
-        }
+    $('header #mobile_menu_icon').on('click',function(){
+        $(this).parent().toggleClass("active");
     })
 })

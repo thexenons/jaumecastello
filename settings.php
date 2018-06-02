@@ -6,6 +6,23 @@ if (!isset($_GET['seccion']))
     header('Location: ?seccion=index.php');
 }
 
+/*
+*
+*   AJUSTES BÁSICOS
+*
+*/
+$page_title = "Jaume Castelló";
+$page_subtitle = "Blog personal";
+
+/*
+*
+*   Redes Sociales
+*
+*/
+$url_facebook = "#";
+$url_twitter = "#";
+$url_instagram = "#";
+
 $server_name = 'http://'.$_SERVER['SERVER_NAME'];
 $url_actual = $url_web.$_SERVER['PHP_SELF'];
 

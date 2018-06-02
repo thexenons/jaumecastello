@@ -461,20 +461,36 @@
 
     header
     {
-        #main_header
+        .container
         {
-            height:4rem;
+            height:5rem;
         }
-        #sub_header
+
+        #desktop_menu
         {
-            background:@bg_header2;
-            height:4rem;
+            margin-left:10px;
+            flex:auto;
+            
+            a
+            {
+                color:@secondary;
+                text-decoration:none;
+                padding:20px;
+                text-transform:uppercase;
+                font-weight:bold;
+                opacity:0.7;
+    
+                &:hover
+                {
+                    opacity:1;
+                }
+            }
         }
     }
     
     main
     {
-        margin-top:8rem;
+        margin-top:5rem;
     }
 }
 

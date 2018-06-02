@@ -20,12 +20,23 @@
                 <img src="img/logo.png" alt="">
             </a>
         </div>
-        <div class="desktop_menu display-none display-lg-flex">
+        <div id="desktop_menu" class="display-none display-lg-flex">
             <div class="container">
                 <?php foreach($array_menu as $item_menu): ?>
                 <a href="<?php echo $item_menu['url'] ?>"><?php echo $item_menu['nombre'] ?></a>
                 <?php endforeach; ?>
             </div>
+        </div>
+        <div id="social_header_links">
+            <a href="<?php echo $url_facebook ?>">
+                <i class="fa fa-facebook"></i>
+            </a>
+            <a href="<?php echo $url_twitter ?>">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a href="<?php echo $url_instagram ?>">
+                <i class="fa fa-instagram"></i>
+            </a>
         </div>
     </div>
 </header>

@@ -11,7 +11,9 @@
             </div>
             <nav id="mobile_menu_nav">
                 <?php foreach($array_menu as $item_menu): ?>
-                <a href="<?php echo $item_menu['url'] ?>"><?php echo $item_menu['nombre'] ?></a>
+                <a href="<?php echo $item_menu['url'] ?>">
+                    <?php echo $item_menu['nombre'] ?>
+                </a>
                 <?php endforeach; ?>
             </nav>
         </div>
@@ -23,7 +25,9 @@
         <div id="desktop_menu" class="display-none display-lg-flex">
             <div class="container">
                 <?php foreach($array_menu as $item_menu): ?>
-                <a href="<?php echo $item_menu['url'] ?>"><?php echo $item_menu['nombre'] ?></a>
+                <a href="<?php echo $item_menu['url'] ?>">
+                    <?php echo $item_menu['nombre'] ?>
+                </a>
                 <?php endforeach; ?>
             </div>
         </div>

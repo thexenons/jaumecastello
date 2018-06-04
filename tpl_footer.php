@@ -1,13 +1,19 @@
 <footer>
-    <div class="container display-lg-flex">
-        <div id="footer_logo">
+    <div class="container display-lg-flex align-items-lg-center">
+        <div id="logo_footer" class="display-flex align-items-center align-items-lg-start">
             <a href="#">
                 <img src="img/logo2.png">
             </a>
         </div>
-        <div id="copyright">
+        <div id="copyright" class="display-flex align-items-center align-items-lg-start">
             <span class="display-block">@ <?php echo $page_title." ".date(Y) ?></span>
             <span><?php echo $page_subtitle; ?></span>
+        </div>
+        <div id="menu_footer">
+            <?php foreach($array_menu as $item_menu): ?>
+            <a href="<?php echo $item_menu['url'] ?>"><?php echo $item_menu['nombre'] ?></a>
+            <?php endforeach; ?>
+            <a href="#header">Volver arriba <i class="fa fa-angle-up"></i></a>
         </div>
     </div>
 </footer>

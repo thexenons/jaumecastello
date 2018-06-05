@@ -6,7 +6,7 @@
             </a>
         </div>
         <div id="copyright" class="display-flex align-items-center align-items-lg-start">
-            <span class="display-block">@
+            <span>@
                 <?php echo $page_title." ".date(Y) ?>
             </span>
             <span>

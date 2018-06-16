@@ -1,3 +1,4 @@
+<div id="top"></div>
 <header>
     <div class="container display-lg-flex">
         <div id="mobile_menu">
@@ -31,7 +32,7 @@
                 <?php endforeach; ?>
             </div>
         </div>
-        <div id="social_header_links">
+        <div id="social_header_links" class="active">
             <a href="<?php echo $url_facebook ?>">
                 <i class="fa fa-facebook"></i>
             </a>

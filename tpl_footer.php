@@ -7,7 +7,7 @@
         </div>
         <div id="copyright" class="display-flex align-items-center align-items-lg-start">
             <span>@
-                <?php echo $page_title." ".date(Y) ?>
+                <?php echo $page_title." ".date("Y") ?>
             </span>
             <span>
                 <?php echo $page_subtitle; ?>
@@ -19,7 +19,7 @@
                 <?php echo $item_menu['nombre'] ?>
             </a>
             <?php endforeach; ?>
-            <a href="#header">Volver arriba
+            <a href="#top">Volver arriba
                 <i class="fa fa-angle-up"></i>
             </a>
         </div>

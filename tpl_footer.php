@@ -1,6 +1,6 @@
 <footer>
     <div class="container display-lg-flex align-items-lg-center">
-        <div id="logo_footer" class="display-flex align-items-center align-items-lg-start">
+        <div id="logo_footer" class="display-flex justify-content-center justify-content-lg-start mb-2 mb-lg-0 mr-lg-5">
             <a href="#">
                 <img src="img/logo2.png">
             </a>

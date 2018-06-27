@@ -1,5 +1,5 @@
 $(function () {
-    $('header #mobile_menu_icon').on('click', function () {
+    $('header #mobile-menu_icon').on('click', function () {
         $(this).parent().toggleClass("active");
     })
 })

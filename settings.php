@@ -1,5 +1,9 @@
 <?php
 
+/* Mostrar errores */
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+
 /* REDIRECCIÓN SI NO EXISTE SECCIÓN */
 if (!isset($_GET['seccion']))
 {
@@ -32,6 +36,21 @@ $seccion = $_GET['seccion'];
 $array_menu = [
     [
         'nombre' => 'Ejemplo',
+        'url' => '#'
+    ],
+    [
+        'nombre' => 'Ejemplo 2',
+        'url' => '#'
+    ]
+];
+
+$array_menu_footer = [
+    [
+        'nombre' => 'Ejemplo',
+        'url' => '#'
+    ],
+    [
+        'nombre' => 'Ejemplo 2',
         'url' => '#'
     ]
 ];

@@ -1,18 +1,38 @@
-<?php include 'control/index.php'; ?>
+<?php
+    include 'control/index.php';
+    include 'plugins/homeslider/Homeslider.php';
+?>
 
 <main>
-    <div class="container">
-        <div class="main-header">
-            <h1>INDEX</h1>
+    <?php
+        $images = [
+            [
+                'url' => 'img/slider1.jpg',
+                'alt' => 'prueba'
+            ],
+            [
+                'url' => 'img/slider2.jpg',
+                'alt' => 'prueba2'
+            ]
+        ];
+        $options = [];
+        $homeslider = new Homeslider($images,$options);
+        echo $homeslider::renderWidget();
+    ?>
+    <article>
+        <div class="container">
+            <div class="main-header">
+                <h1>INDEX</h1>
+            </div>
+            <div class="content">
+                <p>Hola</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita amet commodi alias eveniet eaque possimus, repellat in cumque ut doloremque iste. Ducimus, voluptatibus corrupti facere eius omnis blanditiis minus libero.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita amet commodi alias eveniet eaque possimus, repellat in cumque ut doloremque iste. Ducimus, voluptatibus corrupti facere eius omnis blanditiis minus libero.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita amet commodi alias eveniet eaque possimus, repellat in cumque ut doloremque iste. Ducimus, voluptatibus corrupti facere eius omnis blanditiis minus libero.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita amet commodi alias eveniet eaque possimus, repellat in cumque ut doloremque iste. Ducimus, voluptatibus corrupti facere eius omnis blanditiis minus libero.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita amet commodi alias eveniet eaque possimus, repellat in cumque ut doloremque iste. Ducimus, voluptatibus corrupti facere eius omnis blanditiis minus libero.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita amet commodi alias eveniet eaque possimus, repellat in cumque ut doloremque iste. Ducimus, voluptatibus corrupti facere eius omnis blanditiis minus libero.</p>
+            </div>
         </div>
-        <article>
-            <p>Hola</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita amet commodi alias eveniet eaque possimus, repellat in cumque ut doloremque iste. Ducimus, voluptatibus corrupti facere eius omnis blanditiis minus libero.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita amet commodi alias eveniet eaque possimus, repellat in cumque ut doloremque iste. Ducimus, voluptatibus corrupti facere eius omnis blanditiis minus libero.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita amet commodi alias eveniet eaque possimus, repellat in cumque ut doloremque iste. Ducimus, voluptatibus corrupti facere eius omnis blanditiis minus libero.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita amet commodi alias eveniet eaque possimus, repellat in cumque ut doloremque iste. Ducimus, voluptatibus corrupti facere eius omnis blanditiis minus libero.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita amet commodi alias eveniet eaque possimus, repellat in cumque ut doloremque iste. Ducimus, voluptatibus corrupti facere eius omnis blanditiis minus libero.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita amet commodi alias eveniet eaque possimus, repellat in cumque ut doloremque iste. Ducimus, voluptatibus corrupti facere eius omnis blanditiis minus libero.</p>
-        </article>
-    </div>
+    </article>
 </main>

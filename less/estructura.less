@@ -239,6 +239,37 @@ body
 
 /*
 
+    LINKS
+
+*/
+.link
+{
+    text-decoration:none;
+    text-transform:uppercase;
+    font-weight:bold;
+    text-align:center;
+    color:@secondary;
+    opacity:0.7;
+
+    &:hover
+    {
+        opacity:1;
+    }
+}
+
+/*
+
+    ANCHOR
+
+*/
+.anchor
+{
+    position:absolute;
+    top:-7rem;
+}
+
+/*
+
     HEADER
 
 */
@@ -255,28 +286,28 @@ header
         height:7rem;
     }
 
-    #mobile_menu
+    #mobile-menu
     {
         &.active
         {
-            #mobile_menu_nav
+            #mobile-menu_nav
             {
                 height:~"calc(100vh - 7rem)";
             }
 
-            #mobile_menu_open
+            #mobile-menu_open
             {
                 opacity:0;
             }
 
-            #mobile_menu_close
+            #mobile-menu_close
             {
                 opacity:1;
             }
         }
     }
 
-    #mobile_menu_open, #mobile_menu_close
+    #mobile-menu_open, #mobile-menu_close
     {
         padding:10px;
         height:40px;
@@ -294,12 +325,12 @@ header
         cursor:pointer;
     }
 
-    #mobile_menu_close
+    #mobile-menu_close
     {
         opacity:0;
     }
     
-    #mobile_menu_nav
+    #mobile-menu_nav
     {
         display:flex;
         flex-direction:column;
@@ -311,23 +342,6 @@ header
         overflow:hidden;
         transition:.5s ease;
         background:@bg_header;
-
-        a
-        {
-            width:100%;
-            padding:20px;
-            text-align:center;
-            color:@secondary;
-            text-decoration:none;
-            text-transform:uppercase;
-            font-weight:bold;
-            opacity:0.7;
-
-            &:hover
-            {
-                opacity:1;
-            }
-        }
     }
 
     #logo
@@ -337,25 +351,6 @@ header
         img
         {
             height:50px;
-        }
-    }
-
-    #social_header_links
-    {
-        display:flex;
-        justify-content:center;
-        align-items:center;
-
-        a
-        {
-            color:@secondary;
-            padding:10px;
-            opacity:0.7;
-
-            &:hover
-            {
-                opacity:1;
-            }
         }
     }
 }
@@ -380,11 +375,22 @@ footer
     background:@bg_footer;
     color:@secondary;
 
-    #logo_footer
+    #footer_logo
     {
         img
         {
             height:50px;
+        }
+    }
+
+    .footer_menu_item
+    {
+        padding:10px 0;
+        margin-right:10px;
+
+        &:last-child
+        {
+            margin-right:0;
         }
     }
 }

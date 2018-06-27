@@ -881,6 +881,31 @@ body {
 }
 /*
 
+    LINKS
+
+*/
+.link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  color: #cccccc;
+  opacity: 0.7;
+}
+.link:hover {
+  opacity: 1;
+}
+/*
+
+    ANCHOR
+
+*/
+.anchor {
+  position: absolute;
+  top: -7rem;
+}
+/*
+
     HEADER
 
 */
@@ -894,17 +919,17 @@ header {
 header .container {
   height: 7rem;
 }
-header #mobile_menu.active #mobile_menu_nav {
+header #mobile-menu.active #mobile-menu_nav {
   height: calc(100vh - 7rem);
 }
-header #mobile_menu.active #mobile_menu_open {
+header #mobile-menu.active #mobile-menu_open {
   opacity: 0;
 }
-header #mobile_menu.active #mobile_menu_close {
+header #mobile-menu.active #mobile-menu_close {
   opacity: 1;
 }
-header #mobile_menu_open,
-header #mobile_menu_close {
+header #mobile-menu_open,
+header #mobile-menu_close {
   padding: 10px;
   height: 40px;
   width: 40px;
@@ -920,10 +945,10 @@ header #mobile_menu_close {
   opacity: 1;
   cursor: pointer;
 }
-header #mobile_menu_close {
+header #mobile-menu_close {
   opacity: 0;
 }
-header #mobile_menu_nav {
+header #mobile-menu_nav {
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -935,37 +960,11 @@ header #mobile_menu_nav {
   transition: .5s ease;
   background: #555555;
 }
-header #mobile_menu_nav a {
-  width: 100%;
-  padding: 20px;
-  text-align: center;
-  color: #cccccc;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: bold;
-  opacity: 0.7;
-}
-header #mobile_menu_nav a:hover {
-  opacity: 1;
-}
 header #logo {
   text-align: center;
 }
 header #logo img {
   height: 50px;
-}
-header #social_header_links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-header #social_header_links a {
-  color: #cccccc;
-  padding: 10px;
-  opacity: 0.7;
-}
-header #social_header_links a:hover {
-  opacity: 1;
 }
 /*
 
@@ -984,8 +983,15 @@ footer {
   background: #555555;
   color: #cccccc;
 }
-footer #logo_footer img {
+footer #footer_logo img {
   height: 50px;
+}
+footer .footer_menu_item {
+  padding: 10px 0;
+  margin-right: 10px;
+}
+footer .footer_menu_item:last-child {
+  margin-right: 0;
 }
 /* Small devices (SM) */
 @media (min-width: 576px) {

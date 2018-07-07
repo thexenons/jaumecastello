@@ -21,20 +21,31 @@
 <body>
 
     <!-- <HEADER> -->
-    <?php include 'tpl_header.php'; ?>
+        <?php include 'tpl_header.php'; ?>
     <!-- </HEADER> -->
 
     <!-- <CONTENT> -->
-    <?php include 'contents/'.$seccion; ?>
+        <?php include 'contents/'.$seccion; ?>
     <!-- </CONTENT> -->
 
     <!-- <FOOTER> -->
-    <?php include 'tpl_footer.php'; ?>
+        <?php include 'tpl_footer.php'; ?>
     <!-- </FOOTER> -->
 
     <!-- <JS> -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/script.js"></script>
+        <script src="js/jquery-3.3.1.min.js"></script>
+
+        <!-- PLUGINS -->
+        <?php 
+            // HOMESLIDER
+            if($homeslider)
+            {
+                echo "<script src='plugins/homeslider/homeslider.js'></script>";
+            }
+        ?>
+
+        <!-- CUSTOM -->
+        <script src="js/script.js"></script>
     <!-- </JS> -->
 
 </body>

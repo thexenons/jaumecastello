@@ -1,6 +1,8 @@
 <?php
     include 'control/index.php';
     include 'plugins/homeslider/Homeslider.php';
+
+    $homeslider_activated = true;
 ?>
 
 <main>

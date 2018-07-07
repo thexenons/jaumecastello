@@ -1,3 +1,13 @@
+.homeslider_img
+{
+    display:none;
+}
+
+.homeslider_img.active
+{
+    display:block;
+}
+
 .homeslider .homeslider_img img
 {
     width:100%;

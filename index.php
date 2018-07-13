@@ -21,7 +21,7 @@
 <body>
 
     <!-- <HEADER> -->
-        <?php include 'tpl_header.php'; ?>
+        <?php include 'header.php'; ?>
     <!-- </HEADER> -->
 
     <!-- <CONTENT> -->
@@ -29,7 +29,7 @@
     <!-- </CONTENT> -->
 
     <!-- <FOOTER> -->
-        <?php include 'tpl_footer.php'; ?>
+        <?php include 'footer.php'; ?>
     <!-- </FOOTER> -->
 
     <!-- <JS> -->

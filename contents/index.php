@@ -19,7 +19,7 @@
         ];
         $options = [];
         $homeslider = new Homeslider($images,$options);
-        echo $homeslider::renderWidget();
+        $homeslider::renderWidget();
     ?>
     <article>
         <div class="container">

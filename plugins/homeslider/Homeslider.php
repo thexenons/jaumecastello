@@ -30,28 +30,27 @@ class Homeslider
     {
         $images = self::getImages();
         $options = self::getOptions();
-
-        $html =
-                    "<div class='homeslider'>
-                        <div class='homeslider_div'>";
+        ?>
+            <div class='homeslider'>
+                <div class='homeslider_div'>
         
+        <?php        
         foreach($images as $image)
         {
-            $html .=
-                            "<div class='homeslider_img'>
-                                <img src='{$image['url']}' alt='{$image['alt']}'>
-                            </div>";
+            ?>
+            
+                    <div class='homeslider_img'>
+                        <img src='<?php echo $image['url']; ?>' alt='<?php echo $image['alt']; ?>'>
+                    </div>
+            <?php
         }
-        
-        $html .=
-                            "
-                        </div>
-                        <div class='homeslider_nav'>
-                            <div class='homeslider_nav_button homeslider_nav_prev'><i class='fa fa-angle-left'></i></div>
-                            <div class='homeslider_nav_button homeslider_nav_next'><i class='fa fa-angle-right'></i></div>
-                        </div>
-                    </div>";
-
-        return $html;
+        ?>
+                </div>
+                <div class='homeslider_nav'>
+                    <div class='homeslider_nav_button homeslider_nav_prev'><i class='fa fa-angle-left'></i></div>
+                    <div class='homeslider_nav_button homeslider_nav_next'><i class='fa fa-angle-right'></i></div>
+                </div>
+            </div>
+        <?php
     }
 }

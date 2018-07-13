@@ -1,6 +1,35 @@
+.homeslider
+{
+    position:relative;
+}
+
 .homeslider_img
 {
     display:none;
+}
+
+.homeslider_img.position-left
+{
+    display:block;
+    transition:.3s;
+    transform:translateX(-100%);
+}
+
+.homeslider_img.position-right
+{
+    display:block;
+    transition:.3s;
+    transform:translateX(100%);
+}
+
+.homeslider_img.swipe-to-left
+{
+
+}
+
+.homeslider_img.swipe-to-right
+{
+
 }
 
 .homeslider_img.active
@@ -11,4 +40,39 @@
 .homeslider .homeslider_img img
 {
     width:100%;
+}
+
+.homeslider_nav
+{
+    position:absolute;
+    top:45%;
+    width:100%;
+}
+
+.homeslider_nav_button
+{
+    position:absolute;
+    top:50%;
+    background:#555;
+    color:white;
+    padding:5px 15px;
+    font-size:1.5rem;
+    cursor:pointer;
+    opacity:0;
+    transition:.3s;
+}
+
+.homeslider:hover .homeslider_nav_button
+{
+    opacity:1;
+}
+
+.homeslider_nav_prev
+{
+    left:0;
+}
+
+.homeslider_nav_next
+{
+    right:0;
 }
